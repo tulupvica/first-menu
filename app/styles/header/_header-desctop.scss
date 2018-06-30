@@ -1,0 +1,23 @@
+.header-wrap {
+  background: #2c2721;
+}
+
+.header {
+  //max-width: 1170px;
+  //margin: 0 auto;
+  //padding: 0 10px;
+  @include contaiter(0 auto, 0 10px);
+  @extend %space-between;
+}
+
+.header__bl {
+  align-self: center;
+}
+
+.logo__link {
+  display: inline-block;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #fff;
+}

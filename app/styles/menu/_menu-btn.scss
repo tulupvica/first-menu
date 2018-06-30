@@ -1,0 +1,60 @@
+
+.menu-btn {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.menu-btn__link {
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  z-index: 30;
+}
+
+.menu-btn__line,
+.menu-btn__line:before,
+.menu-btn__line:after {
+  position: absolute;
+  width: 25px;
+  height: 2px;
+  background: #fff;
+  top: 50%;
+  margin-top: -1px;
+  //margin-left: -10px;
+  //left: 50%;
+}
+
+.menu-btn__line:before,
+.menu-btn__line:after {
+  @extend %pseudo;
+  transition: .3s;
+}
+
+.menu-btn__line:before {
+  transform: translateY(-6px);
+}
+
+.menu-btn__line:after {
+  transform: translateY(6px);
+}
+
+.menu-btn__active {
+
+  .menu-btn__line {
+    background: #fff;
+    width: 13px;
+  }
+
+  .menu-btn__line:before {
+    background: #fff;
+  }
+
+  .menu-btn__line:after {
+    width: 18px;
+    background: #fff;
+  }
+}

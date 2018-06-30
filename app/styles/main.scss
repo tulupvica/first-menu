@@ -1,0 +1,24 @@
+//ASSETS
+//======================
+@import "helpers/reset";
+@import "helpers/setups";
+@import "helpers/fontello";
+@import "helpers/mixins";
+@import "helpers/placeholders";
+
+//header
+@import "header/header-desctop";
+@import "header/header-tablet";
+
+//menu
+@import "menu/menu-btn";
+@import "menu/desctop-menu";
+@import "menu/tablet-menu";
+
+html {
+  color: #0d0d14;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}

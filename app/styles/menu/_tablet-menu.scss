@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav__list {
+    flex-direction: column;
+  }
+
+  .nav__item {
+
+    &:hover  .drop-down{
+      display: none;
+    }
+
+    &_active {
+      .down-diricon- {
+        transform: rotate(180deg);
+      }
+    }
+
+  }
+
+  .drop-down {
+    position: relative;
+  }
+
+  .nav__item {
+    border-bottom: 1px solid #967f5f;
+  }
+
+  .drop-down__link {
+    padding: 12px 32px;
+  }
+
+  .down-diricon- {
+    position: absolute;
+    right: 16px;
+    transition: .2s;
+  }
+
+}
