@@ -16,16 +16,29 @@ $( document ).ready(function() {
         }
     });
 
+
     $('.nav__item').on('click', function () {
         $(this).children('.drop-down').slideToggle();
         $(this).toggleClass('nav__item_active');
 
     });
 
-
     // $('.nav__item').on('click', function () {
-    //     $(this).siblings().removeClass('nav__link_active');
-    //     $(this).toggleClass('nav__link_active');
+    //
+    //     if ($('.drop-down').attr("display") == "block"){
+    //         $('.drop-down').attr("display","none");
+    //         $('.drop-down').slideUp();
+    //         $('.nav__item').removeClass('nav__item_active');
+    //         // $('.nav__item').hasClass('down').slideDown();
+    //     }
+    //     else {
+    //         $(this).children('.drop-down').slideDown();
+    //         $(this).addClass('nav__item_active');
+    //         $('.drop-down').attr("display", "block");
+    //
+    //     }
+    //
     // });
+
 
 });

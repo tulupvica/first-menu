@@ -3,9 +3,6 @@
 }
 
 .header {
-  //max-width: 1170px;
-  //margin: 0 auto;
-  //padding: 0 10px;
   @include contaiter(0 auto, 0 10px);
   @extend %space-between;
 }

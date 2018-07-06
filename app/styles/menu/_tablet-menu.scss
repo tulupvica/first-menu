@@ -1,3 +1,16 @@
+@media (max-width: 1024px) {
+
+  .nav__item {
+
+    &:hover  .drop-down{
+      display: none;
+    }
+
+  }
+
+}
+
+
 @media (max-width: 768px) {
 
   .menu-btn {
@@ -10,17 +23,16 @@
 
   .nav__item {
 
-    &:hover  .drop-down{
-      display: none;
-    }
-
     &_active {
       .down-diricon- {
         transform: rotate(180deg);
       }
+
     }
 
   }
+
+}
 
   .drop-down {
     position: relative;
