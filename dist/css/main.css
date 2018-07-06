@@ -342,10 +342,7 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 1024px) {
   .nav__item:hover .drop-down {
-    display: none; }
-  .nav__item_active .down-diricon- {
-    -webkit-transform: rotate(180deg);
-    transform: rotate(180deg); } }
+    display: none; } }
 
 @media (max-width: 768px) {
   .menu-btn {
@@ -355,6 +352,9 @@ h1, h2, h3, h4, h5, h6 {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+  .nav__item_active .down-diricon- {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg); }
   .drop-down {
     position: relative; }
   .nav__item {
